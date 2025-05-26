@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tripulação - Gaton IX</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+  <header>
+    <h1>Tripulação da Gaton IX</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="equipe.html">Tripulação</a></li>
+        <li><a href="produtos.html">Apoie a Missão</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="reveal">
+    <h2>Conheça a Tripulação</h2>
+    <div class="equipe-container">
+
+      <!-- Card Miau Zeta -->
+      <div class="card tripulante" onclick="expandCard(this)">
+        <img src="assets/Imagem/miauZeta.png" alt="Comandante Miau Zeta">
+        <h3 class="tripulante-nome">Miau Zeta</h3>
+        <div class="info">
+          <p>Comandante felino, estrategista cósmico e mestre em negociação intergaláctica.</p>
+        </div>
+      </div>
+
+      <!-- Card Bola de Pelo -->
+      <div class="card tripulante" onclick="expandCard(this)">
+        <img src="assets/Imagem/Bola_de_Pelo.png" alt="Astropiloto Bola de Pelo">
+        <h3 class="tripulante-nome">Bola de Pelo</h3>
+        <div class="info">
+          <p>Piloto com reflexos ultrarrápidos, capaz de desviar de meteoros sem perder a postura.</p>
+        </div>
+      </div>
+
+      <!-- Card RoniRon -->
+      <div class="card tripulante" onclick="expandCard(this)">
+        <img src="assets/Imagem/RoniRon.png" alt="Engenheiro RoniRon">
+        <h3 class="tripulante-nome">RoniRon</h3>
+        <div class="info">
+          <p>Gênio da engenharia espacial, capaz de consertar qualquer falha com um toque de patinha.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="equipe-container">
+
+      <!-- Card Scooby -->
+      <div class="card tripulante" onclick="expandCard(this)">
+        <img src="assets/Imagem/Scooby.png" alt="Scooby">
+        <h3 class="tripulante-nome">Scooby</h3>
+        <div class="info">
+          <p>Especialista em detectar sinais alienígenas e identificar possíveis ameaças cósmicas.</p>
+        </div>
+      </div>
+
+      <!-- Card Dona Fifi -->
+      <div class="card tripulante" onclick="expandCard(this)">
+        <img src="assets/Imagem/Dona_Fifi.png" alt="Dona Fifi">
+        <h3 class="tripulante-nome">Dona Fifi</h3>
+        <div class="info">
+          <p>Diplomata intergaláctica, especialista em etiqueta e negociações com civilizações distantes.</p>
+        </div>
+      </div>
+
+      <!-- Card Azeitona -->
+      <div class="card tripulante" onclick="expandCard(this)">
+        <img src="assets/Imagem/Azeitona.png" alt="Azeitona">
+        <h3 class="tripulante-nome">Azeitona</h3>
+        <div class="info">
+          <p>Exploradora de asteroides, determinada mesmo após seu acidente com as abelhas cósmicas.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gaton IX - KS</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const cards = document.querySelectorAll('.card.tripulante');
+  
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('expand');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaton IX - Central Galáctica</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Gaton IX</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="equipe.html">Tripulação</a></li>
+        <li><a href="produtos.html">Apoie a Missão</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+        <li><a href="diario.html">Diário</a></li> 
+        <li><a href="planetas.html">Planetas</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Fundo com galeria de fotos passando -->
+  <div id="gallery-background" class="gallery-background">
+    <div class="slide" id="slide1">
+      <img src="assets/Imagem/imagem1.png" alt="Imagem 1">
+    </div>
+    <div class="slide" id="slide2">
+      <img src="assets/Imagem/imagem2.png" alt="Imagem 2">
+    </div>
+    <!-- Adicione mais imagens conforme necessário -->
+  </div>
+
+  <!-- Título sobre o fundo -->
+  <div class="overlay-text">
+    <h1>Gaton IX</h1>
+    <p>Embarque na missão intergaláctica e ajude a renovar o universo com energia, diversão e muitos miados</p>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Gaton IX- KS</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Iniciar a animação de galeria de fundo (slider)
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('#gallery-background .slide');
+
+    function showSlides() {
+      slides.forEach((el, i) => {
+        el.style.display = i === slideIndex ? 'block' : 'none';
+      });
+      slideIndex = (slideIndex + 1) % slides.length;
+      setTimeout(showSlides, 5000); // Trocar a imagem a cada 5 segundos
+    }
+
+    if (slides.length > 0) showSlides();
+  </script>
+</body>
+</html>

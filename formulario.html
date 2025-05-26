@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensagem para Gaton IX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Envie sua Mensagem Estelar</h1>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="produtos.html">Produtos</a> |
+      <a href="equipe.html">Tripulação</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <form id="formContato" class="reveal">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Sua mensagem para a Gaton IX:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <h2>Você tem o que é preciso para ser um Comunicador Terrestre?</h2>
+
+        <label>1. Você ronrona sob pressão?</label>
+        <div class="radio-group">
+          <label>
+        <input type="radio" name="q1" value="sim" required> Sim
+        </label>
+        <label>
+        <input type="radio" name="q1" value="não"> Não
+        </div>
+
+        <label>2. Escolha sua refeição favorita:</label>
+        <select name="q2" required>
+          <option value="">-- Escolha --</option>
+          <option value="ração cósmica">Ração Cósmica</option>
+          <option value="atuns intergalácticos">Atuns Intergalácticos</option>
+          <option value="sopa de nebulosa">Sopa de Nebulosa</option>
+        </select>
+
+        <label>3. Você dormiria em cima de um painel de controle?</label>
+<div class="radio-group">
+  <label>
+    <input type="radio" name="q3" value="com certeza" required> Com certeza
+  </label>
+  <label>
+    <input type="radio" name="q3" value="talvez"> Talvez
+  </label>
+  <label>
+    <input type="radio" name="q3" value="jamais"> Jamais
+  </label>
+</div>
+
+<button type="submit">Enviar Mensagem</button>
+      </form>
+
+      <div id="retorno"></div>
+
+      <!-- Seção para as mensagens holográficas -->
+      <div class="hologram-container">
+        <h3>Mensagens em Garrafas Espaciais</h3>
+        <div class="garrafa" id="garrafa1"></div>
+        <div class="garrafa" id="garrafa2"></div>
+        <div class="garrafa" id="garrafa3"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/formulario.js"></script>
+  <footer>
+    <p>&copy; 2025 Gaton IX- KS</p>
+  </footer>
+</body>
+</html>
