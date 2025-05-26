@@ -1,17 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 🛰️ Console de boas-vindas
   console.log("🚀 Gaton IX: Sistema de bordo iniciado");
 
-  // ⭐ Sticky Header ao rolar
   window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     header.classList.toggle('scrolled', window.scrollY > 50);
   });
 
-  // 😺 Prepara o som de miado
+  // Prepara o miado
   const miado = new Audio('assets/audio/miau.mp3');
 
-  // 🌙 Alternância de tema galáctico (com memória)
+  // Alternância de tema 
   const toggleButton = document.querySelector('#themeToggle');
   if (localStorage.getItem('tema') === 'galactico') {
     document.body.classList.add('galactic-theme');
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 🖼️ Slider simples para galeria
+  //Slider
   let slideIndex = 0;
   const slides = document.querySelectorAll('.slide');
 
@@ -33,11 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
       el.style.display = i === slideIndex ? 'block' : 'none';
     });
     slideIndex = (slideIndex + 1) % slides.length;
-    setTimeout(showSlides, 3000); // 3 segundos para passar a imagem
+    setTimeout(showSlides, 3000); // 3 segundos de imagem
   }
   if (slides.length > 0) showSlides();
 
-  // 🪐 Animação ao rolar (revela elementos)
   const revealElements = document.querySelectorAll('.reveal');
   function revealOnScroll() {
     const triggerBottom = window.innerHeight * 0.85;
@@ -51,9 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll(); // chama uma vez no início
+  revealOnScroll(); 
 
-  // 😺 Miado ao clicar em qualquer botão
+  // Miado ao clicar em qualquer botão
   document.querySelectorAll('button').forEach((botao) => {
     botao.addEventListener('click', () => {
       try {
@@ -65,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 😺 Miado ao clicar nos links do menu com navegação atrasada
+  //Miado ao clicar nos menu com navegação atrasada
   document.querySelectorAll('nav a').forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -82,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 😺 Tentar miar ao carregar (autoplay pode falhar dependendo do navegador)
+  // miado
   try {
     miado.play();
   } catch (e) {
@@ -95,16 +92,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-// Função para expandir ou contrair a descrição
+
 function expandCard(element) {
   const isExpanded = element.classList.contains('expand');
   
-  // Fecha todos os outros cards
   document.querySelectorAll('.card.tripulante').forEach(card => {
     card.classList.remove('expand');
   });
 
-  // Se não estava expandido, expande o clicado
   if (!isExpanded) {
     element.classList.add('expand');
   }

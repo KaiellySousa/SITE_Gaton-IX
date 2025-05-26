@@ -311,6 +311,7 @@
         alert("Produto não encontrado.");
         return;
       }
+      //gerar qrcode
 
       qrcodeDiv.innerHTML = "";
     new QRCode(qrcodeDiv, {
@@ -319,7 +320,7 @@
       height: 200
     });
 
-    // MOSTRA a div do Pix
+    //div do Pix
     pixInfo.style.display = 'block';
   }
 

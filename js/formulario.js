@@ -55,7 +55,6 @@ async function carregarMensagensHolograficas() {
     const response = await fetch("https://sheetdb.io/api/v1/2hjgojmpfe3b1");
     const mensagens = await response.json();
 
-    // Pegue as 3 últimas mensagens (ou menos, se tiver poucas)
     const ultimas = mensagens.slice(-3).reverse();
 
     ultimas.forEach((msg, index) => {
