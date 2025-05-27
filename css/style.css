@@ -7,7 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* isso evita vazamento lateral */
+}
 /* Corpo */
 body {
   font-family: 'Roboto', sans-serif;
@@ -24,16 +29,14 @@ body {
 
 header {
   background: linear-gradient(90deg, #6a11cb, #2575fc);
-  color: #fff;              
+  color: #fff;
   padding: 20px 0;
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  box-sizing: border-box;
+  width: 100%;
+  position: relative;
   z-index: 1000;
 }
+
 
 
 header h1 {
