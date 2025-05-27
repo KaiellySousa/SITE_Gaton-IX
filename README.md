@@ -1,6 +1,5 @@
 # Gaton-IX
 
-## Descrição
 
 Gaton-IX é um site desenvolvido como trabalho acadêmico para a faculdade, baseado no tema intergaláctico com uma tripulação de gatos astronautas. O objetivo foi criar um design e uma experiência visual que combinassem com o universo espacial, trazendo uma interface colorida e interativa.
 
