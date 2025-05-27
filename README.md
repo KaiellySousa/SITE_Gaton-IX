@@ -26,5 +26,5 @@ O professor passou como requisito criar um site com o tema Gaton-IX, e eu decidi
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seuusuario/gaton-ix.git
+   git clone https://github.com/KaiellySousa/Site_Gaton-IX.git
 
