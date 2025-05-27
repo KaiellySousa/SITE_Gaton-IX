@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-/* Reset Básico */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,7 @@
 /* Corpo */
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #020024, #090979, #00d4ff); /* Gradiente de fundo */
+  background: linear-gradient(135deg, #020024, #090979, #00d4ff);
   color: #fff;
   line-height: 1.6;
   padding: 20px;
@@ -23,9 +22,8 @@ body {
   flex-direction: column;
 }
 
-/* Cabeçalho */
 header {
-  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradiente no cabeçalho */
+  background: linear-gradient(90deg, #6a11cb, #2575fc); 
   padding: 20px 0;
   text-align: center;
   position: sticky;
@@ -35,12 +33,12 @@ header {
 }
 
 header h1 {
-  font-family: 'Orbitron', sans-serif; /* Fonte para o título */
+  font-family: 'Orbitron', sans-serif; 
   font-size: 3em;
   color: yellow;
   font-weight: 700;
   margin-bottom: 10px;
-  animation: colorShift 3s infinite alternate; /* Animação para alternar a cor */
+  animation: colorShift 3s infinite alternate; 
 }
 
 @keyframes colorShift {
@@ -68,10 +66,10 @@ nav a {
 nav a:hover {
   color: #ffffff;
   text-shadow: 0 0 5px #ff00cc;
-  transform: scale(1.1); /* Efeito de aumento no hover */
+  transform: scale(1.1); 
 }
 
-/* Fundo com galeria de fotos passando */
+/* Fundo com galeria de fotos =>slider */
 #gallery-background {
   position: relative;
   width: 100%;
@@ -93,7 +91,6 @@ nav a:hover {
   object-fit: cover;
 }
 
-/* Overlay sobre o fundo */
 .overlay-text {
   position: absolute;
   top: 50%;
@@ -115,7 +112,6 @@ nav a:hover {
   color: yellow;
 }
 
-/* Rodapé */
 footer {
   text-align: center;
   padding: 20px 0;
@@ -167,7 +163,7 @@ main {
 
 /*equipe.html=>*/
 
-/* Container da equipe */
+
 .equipe-container {
   display: flex;
   flex-wrap: wrap;
@@ -176,7 +172,6 @@ main {
   margin-top: 20px;
 }
 
-/* Card dos tripulantes */
 .card.tripulante {
   background: #fff;
   color: #000;
@@ -195,7 +190,7 @@ main {
   transform: scale(1.05);
 }
 
-/* Imagem do tripulante */
+
 .card.tripulante img {
   width: 100%;
   height: 250px;
@@ -203,13 +198,13 @@ main {
   border-radius: 10px;
 }
 
-/* Nome do tripulante */
+
 .card.tripulante h3 {
   margin-top: 15px;
   font-size: 1.5em;
 }
 
-/* Descrição (info) oculta inicialmente */
+
 .card.tripulante .info {
   max-height: 0;
   overflow: hidden;
@@ -219,7 +214,7 @@ main {
   margin-top: 10px;
 }
 
-/* Quando o card estiver expandido */
+
 .card.tripulante.expand .info {
   max-height: 500px;
   opacity: 1;
@@ -254,18 +249,18 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
   .card {
-    width: 45%; /* Ajusta para 2 colunas em telas menores */
+    width: 45%; 
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    width: 90%; /* Ajusta para 1 coluna em telas pequenas */
+    width: 90%; 
   }
 }
 
 
-/* Seção principal (contendo as entradas do diário) */
+/* entradas do diário) */
 
 main {
   max-width: 1200px;
@@ -284,14 +279,13 @@ main {
   }
 }
 
-/* Título das últimas entradas */
+
 .entry-header h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #ffd700;
 }
 
-/* Estilo dos containers dos cards */
 .entry-container {
   display: flex;
   flex-wrap: wrap;
@@ -300,7 +294,7 @@ main {
   margin-top: 30px;
 }
 
-/* Estilo dos cards */
+
 .entry-card {
   border: 1px solid #ccc;
   padding: 1em;
@@ -311,7 +305,7 @@ main {
   width: calc(33.33% - 30px); /* padrão: 3 por linha */
 }
 
-/* Estilo do texto nos cards */
+
 .entry-card h3 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -319,14 +313,14 @@ main {
 }
 
 .entry-card p {
-  max-height: 4.5em; /* ~3 linhas */
+  max-height: 4.5em; 
   overflow: hidden;
   transition: max-height 0.3s ease;
   white-space: normal;
   margin-bottom: 0.5em;
 }
 
-/* Expansão do card */
+
 .entry-card.expanded p {
   max-height: none;
 }
@@ -335,21 +329,21 @@ main {
   transform: scale(1.05);
 }
 
-/* Botão de Expandir/Recolher */
 .expand-btn {
   display: block;
   margin-top: 10px;
-  color: #ffd700;
-  font-size: 1rem;
+  color: yellow;
+  font-size: 0.8rem;
   cursor: pointer;
   text-decoration: underline;
   transition: color 0.3s ease;
   position: absolute;
-  bottom: 10px;
-  right: 20px;
+  bottom: 5px;
+  right: 18px;
+  
 }
 
-/* Hover no card */
+
 .entry-card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
@@ -363,23 +357,22 @@ main {
 /* Responsividade */
 @media (max-width: 1024px) {
   .entry-card {
-    width: calc(50% - 20px); /* 2 por linha */
+    width: calc(50% - 20px); 
   }
 }
 
 @media (max-width: 768px) {
   .entry-card {
-    width: calc(50% - 20px); /* 2 por linha */
+    width: calc(50% - 20px); 
   }
 }
 
 @media (max-width: 480px) {
   .entry-card {
-    width: 100%; /* 1 por linha */
+    width: 100%; 
   }
 }
 
-/* Estilo do rodapé */
 footer {
   background: #1a1a1a;
   text-align: center;
@@ -388,22 +381,24 @@ footer {
   color: #fff;
 }
 
+/*parte dos produtos*/
+
 .produtos-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas grandes */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   padding: 2rem;
 }
 
 @media (max-width: 1200px) {
   .produtos-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .produtos-container {
-    grid-template-columns: 1fr; /* 1 coluna */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -508,13 +503,13 @@ footer p {
 /* Responsividade */
 @media (max-width: 1200px) {
   .produtos-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 itens por linha em telas menores que 1200px */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .produtos-container {
-    grid-template-columns: 1fr; /* 1 item por linha em telas menores que 768px */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -525,7 +520,7 @@ footer p {
   }
 }
 
-/* Estilos do formulário */
+/* formulário */
 .form-container {
   max-width: 800px;
   margin: 0 auto;
@@ -548,15 +543,15 @@ form input[type="radio"] {
 .radio-group {
   display: flex;
   flex-direction: row;
-  gap: 15px; /* Espaçamento entre as opções */
-  margin-bottom: 1.5rem; /* Espaçamento inferior para a próxima linha */
+  gap: 15px; 
+  margin-bottom: 1.5rem; 
 }
 
 .radio-group label {
   font-size: 1rem;
   color: #fff;
 }
-/* Ajustando a largura do select */
+
 form select {
   width: 100%;
   padding: 0.8rem;
@@ -609,7 +604,7 @@ form button:hover {
 
 .reveal {
   opacity: 1;
-  animation: reveal 0.5s forwards; /* Menor tempo para revelar */
+  animation: reveal 0.5s forwards; 
 }
 
 @keyframes fadeIn {
@@ -617,7 +612,7 @@ form button:hover {
   100% { opacity: 1; }
 }
 
-/* Hologramas das mensagens em garrafa espacial */
+/* Hologramas das mensagens das garrafas */
 .hologram-container {
   margin-top: 3rem;
   text-align: center;
@@ -683,7 +678,6 @@ form button:hover {
   }
 }
 
-/* Estilos do Rodapé */
 footer {
   text-align: center;
   margin-top: 5rem;
@@ -691,7 +685,7 @@ footer {
   font-size: 1rem;
 }
 
-/* Seção Planetas Visitados */
+/* Planetas Visitados */
 .visited-planets h2 {
   color: yellow;
   text-align: center;
@@ -736,7 +730,7 @@ footer {
 }
 
 
-/* Seção Registro das Transformações */
+/* Registro das Transformações */
 .transformation-record h2 {
   color: yellow;
   text-align: center;
@@ -799,7 +793,7 @@ footer {
   transform: scale(1.05);
 }
 
-/* Rodapé */
+
 footer {
   background: #1a1a2e;
   padding: 1.5rem 0;
