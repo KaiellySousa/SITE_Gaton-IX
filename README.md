@@ -23,7 +23,7 @@ O professor passou como requisito criar um site com o tema Gaton-IX, e eu decidi
 
 ## Como usar
 
-1. Clone este repositório:
+1. Acessando o site :
    ```bash
-   git clone https://github.com/KaiellySousa/SITE_Gaton-IX.git
+   https://site-gaton-ix.vercel.app/
 
