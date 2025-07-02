@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("🚀 Gaton IX: Sistema de bordo iniciado");
+  console.log("Gaton IX: Sistema de bordo iniciado");
 
   window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     header.classList.toggle('scrolled', window.scrollY > 50);
   });
 
-  // Prepara o miado
+  // miado
   const miado = new Audio('assets/audio/miau.mp3');
 
-  // Alternância de tema 
+  // fica mudando o tema
   const toggleButton = document.querySelector('#themeToggle');
   if (localStorage.getItem('tema') === 'galactico') {
     document.body.classList.add('galactic-theme');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); 
 
-  // Miado ao clicar em qualquer botão
+  // Miado ao clicar no botão
   document.querySelectorAll('button').forEach((botao) => {
     botao.addEventListener('click', () => {
       try {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  //Miado ao clicar nos menu com navegação atrasada
+  //Miado ao clicar nos menu 
   document.querySelectorAll('nav a').forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const destino = link.getAttribute('href');
       setTimeout(() => {
         window.location.href = destino;
-      }, 500); // tempo para ouvir o miado
+      }, 500); //tempo do miado
     });
   });
 

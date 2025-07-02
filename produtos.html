@@ -249,7 +249,7 @@
     const qrcodeDiv = document.getElementById('pix-qrcode');
     const informacaoPix = document.getElementById('informacao-pix')
 
-      // Exemplo de como gerar o QR Code do Pix com o valor do produto
+      // gerador de qrcode
       let pixCode;
       switch(produto) {
         case 'parafuso': 
@@ -311,7 +311,7 @@
         alert("Produto não encontrado.");
         return;
       }
-      //gerar qrcode
+      //gera qrcode
 
       qrcodeDiv.innerHTML = "";
     new QRCode(qrcodeDiv, {

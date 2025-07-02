@@ -73,6 +73,6 @@ async function carregarMensagensHolograficas() {
   }
 }
 
-// Chama essa função quando a página carregar
+// Chama a função quando carrega a página
 document.addEventListener("DOMContentLoaded", carregarMensagensHolograficas);
 
